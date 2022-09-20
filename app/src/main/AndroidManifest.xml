@@ -4,6 +4,7 @@
     package="ie.wit.placemark">
 
     <application
+        android:name="ie.wit.placemark.main.MainApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +15,7 @@
         android:theme="@style/Theme.Placemark"
         tools:targetApi="31">
         <activity
-            android:name=".PlacemarkActivity"
+            android:name=".activities.PlacemarkListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.PlacemarkActivity">
+            </activity>
     </application>
 
 </manifest>
